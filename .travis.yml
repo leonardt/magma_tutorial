@@ -1,0 +1,25 @@
+language: python
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.9
+      - verilator
+python:
+    - "3.6"
+
+install:
+    - wget https://raw.githubusercontent.com/phanrahan/magma/master/.travis/install_coreir.sh
+    - source install_coreir.sh
+
+    # - pip install python-coveralls
+    - pip install pytest-cov pytest-pep8
+    - pip install -r requirements.txt
+    - pip install -e .
+
+script:
+    - pytest --cov magma_tutorial --pep8 magma_tutorial -v --cov-report term-missing tests
+
+# after_success:
+#     - coveralls
