@@ -36,5 +36,3 @@ $ pip install magma-lang mantle
 $ pip install pytest
 $ pytest tests
 ```
-
-
