@@ -19,7 +19,8 @@ def test_adder(width):
         tester.poke(Add.I1, I1)
         tester.poke(Add.CIN, CIN)
         tester.eval()
-        tester.expect(Add.COUT, (I0.as_uint() + I1.as_uint() + CIN).bit_length() > width)
+        tester.expect(Add.COUT,
+                      (I0.as_uint() + I1.as_uint() + CIN).bit_length() > width)
         tester.expect(Add.O, I0 + I1 + CIN)
 
     tester.compile_and_run(target="verilator", directory="tests/build")
