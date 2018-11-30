@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/leonardt/magma_tutorial.svg?branch=master)](https://travis-ci.com/leonardt/magma_tutorial)
+
 # Setup
 
 ## Python 3.6+
@@ -28,3 +30,11 @@ Install Python libraries
 ```shell
 $ pip install magma-lang mantle
 ```
+
+# Tests
+```shell
+$ pip install pytest
+$ pytest tests
+```
+
+
