@@ -6,6 +6,7 @@ import mantle
 class FullAdder_(m.Circuit):
     IO = ["a", m.In(m.Bit), "b", m.In(m.Bit), "cin", m.In(m.Bit),
           "out", m.Out(m.Bit), "cout", m.Out(m.Bit)]
+
     @classmethod
     def definition(io):
         # Generate the sum
