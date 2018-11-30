@@ -15,8 +15,8 @@ install:
 
     # - pip install python-coveralls
     - pip install pytest-cov pytest-pep8
-    - pip install -r requirements.txt
-    - pip install -e .
+    # - pip install -r requirements.txt
+    # - pip install -e .
 
 script:
     - pytest --cov magma_tutorial --pep8 magma_tutorial -v --cov-report term-missing tests

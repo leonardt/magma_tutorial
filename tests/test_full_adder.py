@@ -15,5 +15,3 @@ def test_full_adder():
         tester.expect(FullAdder_.cout, (a & b) | (b & cin) | (a & cin))
 
     tester.compile_and_run(target="verilator", directory="tests/build")
-
-
