@@ -7,17 +7,7 @@ If you don't have a Python version 3.6 or greater installed, you can install it
 with https://conda.io/miniconda.html.
 
 ## CoreIR
-
-Linux requires gcc 4.9+
-
-MacOS requires modern apple clang (Apple LLVM version 8.0.0+)
-
-```shell
-$ git clone https://github.com/rdaly525/coreir.git
-$ cd coreir
-$ make -j
-$ make install
-```
+See https://github.com/rdaly525/coreir/blob/master/INSTALL.md for instructions
 
 ## Verilator
 Used for Verilog simulation
@@ -28,7 +18,7 @@ $ apt-get install verilator
 
 Install Python libraries
 ```shell
-$ pip install magma-lang mantle
+$ pip install magma-lang mantle fault
 ```
 
 # Tests
