@@ -5,7 +5,7 @@ import mantle
 def DefineCounter(n):
     class _Counter(m.Circuit):
         name = f'Counter{n}'
-        IO = ["O", m.Out(m.UInt(n))] + m.ClockInterface()
+        IO = ["O", m.Out(m.UInt[n])] + m.ClockInterface()
 
         @classmethod
         def definition(io):

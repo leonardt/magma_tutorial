@@ -5,8 +5,8 @@ from .full_adder import FullAdder_
 def DefineAdd_(n):
     class _Add(m.Circuit):
         name = f'Add{n}'
-        IO = ['I0', m.In(m.UInt(n)), 'I1', m.In(m.UInt(n)), 'CIN', m.In(m.Bit),
-              'O', m.Out(m.UInt(n)), 'COUT', m.Out(m.Bit)]
+        IO = ['I0', m.In(m.UInt[n]), 'I1', m.In(m.UInt[n]), 'CIN', m.In(m.Bit),
+              'O', m.Out(m.UInt[n]), 'COUT', m.Out(m.Bit)]
 
         @classmethod
         def definition(io):
