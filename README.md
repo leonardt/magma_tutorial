@@ -2,8 +2,8 @@
 
 # Setup
 
-## Python 3.6+
-If you don't have a Python version 3.6 or greater installed, you can install it
+## Python 3.7+
+If you don't have a Python version 3.7 or greater installed, you can install it
 with https://conda.io/miniconda.html.
 
 ## CoreIR
