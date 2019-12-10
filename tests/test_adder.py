@@ -1,8 +1,6 @@
 from magma_tutorial.adder import DefineAdd_
 import fault
 import fault.random
-import bit_vector
-import itertools
 import pytest
 import random
 
