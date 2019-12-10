@@ -1,6 +1,5 @@
 from magma_tutorial.full_adder import FullAdder_
 import fault
-import bit_vector
 import itertools
 
 
